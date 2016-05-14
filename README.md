@@ -15,8 +15,8 @@ Context:
 
 ### Technical requirements
  - Fork this repository and start working on your assigment.
- - When you're done with coding, submit a [Pull Request]() to this assignment repo to get review.
- - Use [RecyclerView]() and/or [CardView]() to display list of items on home screen.
+ - When you're done with coding, submit a [Pull Request](https://help.github.com/articles/using-pull-requests/) to this assignment repo to get review.
+ - Use [RecyclerView](https://developer.android.com/training/material/lists-cards.html#RecyclerView) and/or [CardView](https://developer.android.com/training/material/lists-cards.html#CardView) to display list of items on home screen.
  - Follow coding standard and app guide here: [Udacity Android guide](https://drive.google.com/folderview?id=0B9xV-rNLGiDGdm5tSlo4NUlqSms&usp=sharing)
 
 ### Why I should do this assigment?
