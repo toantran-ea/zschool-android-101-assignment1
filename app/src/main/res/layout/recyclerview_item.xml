@@ -6,19 +6,51 @@
         android:id="@+id/textView_Beverages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ví dụ"
-        android:textColor="#000000"
-        android:layout_marginTop="20dp"
-        android:clickable="true"
-        android:onClick="onItemClickLisener"
-        android:textSize="30dp" />
+        android:text="@string/textview_drinkName"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/textView_textSize"
+        android:layout_marginLeft="@dimen/textView_layout_marginLeft"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView_Beverages"
+        android:layout_toEndOf="@+id/imageView_Beverages" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/imageView_layout_width"
+        android:layout_height="@dimen/imageView_layout_height"
         android:id="@+id/imageView_Beverages"
         android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/checkBox_layout_marginTop"
+        android:id="@+id/checkBox_CheckBeverages"
+        android:layout_alignTop="@+id/textView_Beverages"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-         />
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="@dimen/editText_layout_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_NumberOfOrder"
+        android:text="@string/editText_number_of_order"
+        android:layout_alignBottom="@+id/imageView_Beverages"
+        android:layout_toRightOf="@+id/textView_NumberOfOrder"
+        android:layout_marginLeft="@dimen/editText_layout_marginLeft"
+        android:layout_toLeftOf="@+id/checkBox_CheckBeverages"
+        android:layout_toStartOf="@+id/checkBox_CheckBeverages" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Number Of Order :"
+        android:id="@+id/textView_NumberOfOrder"
+        android:layout_marginBottom="@dimen/textView_layout_marginBottom"
+        android:layout_alignBottom="@+id/imageView_Beverages"
+        android:layout_alignLeft="@+id/textView_Beverages"
+        android:layout_alignStart="@+id/textView_Beverages" />
 </RelativeLayout>

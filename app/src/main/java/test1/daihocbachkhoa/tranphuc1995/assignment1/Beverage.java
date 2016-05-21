@@ -3,11 +3,11 @@ package test1.daihocbachkhoa.tranphuc1995.assignment1;
 /**
  * Created by tran_phuc on 5/16/2016.
  */
-public class Beverages {
+public class Beverage {
     private String drinkName;
-    private int imgBeverages;
+    private int imageBeverage;
 
-    public Beverages(String drinkName, int imgBeverages) {
+    public Beverage(String drinkName, int imgBeverages) {
         this.setDrinkName(drinkName);
         this.setImgBeverages(imgBeverages);
     }
@@ -21,10 +21,10 @@ public class Beverages {
     }
 
     public int getImgBeverages() {
-        return imgBeverages;
+        return imageBeverage;
     }
 
     public void setImgBeverages(int imgBeverages) {
-        this.imgBeverages = imgBeverages;
+        this.imageBeverage = imgBeverages;
     }
 }
