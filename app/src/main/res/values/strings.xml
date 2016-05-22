@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="button_confirm_order">Confirm Order</string>
+    <string name="textview_drinkName">Example</string>
+    <string name="editText_number_of_order">1</string>
+    <string name="textView_number_of_order">Number Of Order :</string>
+</resources>
