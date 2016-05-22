@@ -9,15 +9,14 @@
         android:id="@+id/recyclerViewList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button_Confirm">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_above="@+id/button_Confirm"></android.support.v7.widget.RecyclerView>
 
     <Button
+        android:id="@+id/button_Confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_confirm_order"
-        android:id="@+id/button_Confirm"
-        android:textSize="@dimen/button_textSize"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_confirm_order"
+        android:textSize="@dimen/button_textSize" />
 </RelativeLayout>

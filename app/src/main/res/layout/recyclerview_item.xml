@@ -2,55 +2,56 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/textView_Beverages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/textView_layout_marginLeft"
+        android:layout_toEndOf="@+id/imageView_Beverages"
+        android:layout_toRightOf="@+id/imageView_Beverages"
         android:text="@string/textview_drinkName"
         android:textColor="@color/colorBlack"
-        android:textSize="@dimen/textView_textSize"
-        android:layout_marginLeft="@dimen/textView_layout_marginLeft"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView_Beverages"
-        android:layout_toEndOf="@+id/imageView_Beverages" />
+        android:textSize="@dimen/textView_textSize" />
 
     <ImageView
+        android:id="@+id/imageView_Beverages"
         android:layout_width="@dimen/imageView_layout_width"
         android:layout_height="@dimen/imageView_layout_height"
-        android:id="@+id/imageView_Beverages"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
     <CheckBox
+        android:id="@+id/checkBox_CheckBeverages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/checkBox_layout_marginTop"
-        android:id="@+id/checkBox_CheckBeverages"
-        android:layout_alignTop="@+id/textView_Beverages"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_Beverages"
+        android:layout_marginTop="@dimen/checkBox_layout_marginTop"
         android:checked="false" />
 
     <EditText
+        android:id="@+id/editText_NumberOfOrder"
         android:layout_width="@dimen/editText_layout_width"
         android:layout_height="wrap_content"
-        android:id="@+id/editText_NumberOfOrder"
-        android:text="@string/editText_number_of_order"
         android:layout_alignBottom="@+id/imageView_Beverages"
-        android:layout_toRightOf="@+id/textView_NumberOfOrder"
         android:layout_marginLeft="@dimen/editText_layout_marginLeft"
         android:layout_toLeftOf="@+id/checkBox_CheckBeverages"
-        android:layout_toStartOf="@+id/checkBox_CheckBeverages" />
+        android:layout_toRightOf="@+id/textView_NumberOfOrder"
+        android:layout_toStartOf="@+id/checkBox_CheckBeverages"
+        android:text="@string/editText_number_of_order" />
 
     <TextView
+        android:id="@+id/textView_NumberOfOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Number Of Order :"
-        android:id="@+id/textView_NumberOfOrder"
-        android:layout_marginBottom="@dimen/textView_layout_marginBottom"
         android:layout_alignBottom="@+id/imageView_Beverages"
         android:layout_alignLeft="@+id/textView_Beverages"
-        android:layout_alignStart="@+id/textView_Beverages" />
+        android:layout_alignStart="@+id/textView_Beverages"
+        android:layout_marginBottom="@dimen/textView_layout_marginBottom"
+        android:text="@string/textView_number_of_order"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 </RelativeLayout>

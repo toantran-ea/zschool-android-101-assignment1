@@ -10,6 +10,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
 /**
@@ -19,14 +20,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private ArrayList<Beverage> arlDrink = new ArrayList<>();
     ArrayList<Order> arlCheckBeverages = new ArrayList<>();
 
-    public RecyclerViewAdapter (ArrayList<Beverage> arlDrink){
+    public RecyclerViewAdapter(ArrayList<Beverage> arlDrink) {
         this.arlDrink = arlDrink;
     }
 
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View itemView = inflater.inflate(R.layout.recyclerview_item,parent, false);
+        View itemView = inflater.inflate(R.layout.recyclerview_item, parent, false);
         return new RecyclerViewHolder(itemView);
     }
 
@@ -85,13 +86,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         private CheckBox chbCheckBeverages;
         private EditText edtNumberOfOrder;
         private TextView tvNumberOfOrder;
+
         public RecyclerViewHolder(View itemView) {
             super(itemView);
             tvBeverages = (TextView) itemView.findViewById(R.id.textView_Beverages);
-            imgBeverages = (ImageView)itemView.findViewById(R.id.imageView_Beverages);
-            chbCheckBeverages = (CheckBox)itemView.findViewById(R.id.checkBox_CheckBeverages);
-            edtNumberOfOrder = (EditText)itemView.findViewById(R.id.editText_NumberOfOrder);
-            tvNumberOfOrder = (TextView)itemView.findViewById(R.id.textView_NumberOfOrder);
+            imgBeverages = (ImageView) itemView.findViewById(R.id.imageView_Beverages);
+            chbCheckBeverages = (CheckBox) itemView.findViewById(R.id.checkBox_CheckBeverages);
+            edtNumberOfOrder = (EditText) itemView.findViewById(R.id.editText_NumberOfOrder);
+            tvNumberOfOrder = (TextView) itemView.findViewById(R.id.textView_NumberOfOrder);
         }
     }
 }

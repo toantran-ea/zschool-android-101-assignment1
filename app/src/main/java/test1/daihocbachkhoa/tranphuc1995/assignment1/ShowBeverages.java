@@ -15,10 +15,10 @@ public class ShowBeverages extends AppCompatActivity {
         init();
     }
 
-    private void init(){
-        tvShowBeverages = (TextView)findViewById(R.id.textView_ShowBeverages);
+    private void init() {
+        tvShowBeverages = (TextView) findViewById(R.id.textView_ShowBeverages);
         Bundle bd = getIntent().getExtras();
-        if(bd!= null){
+        if (bd != null) {
             listOrder = bd.getString("listOrder");
             tvShowBeverages.setText(listOrder);
         }
